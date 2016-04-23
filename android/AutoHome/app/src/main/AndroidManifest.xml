@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.ceducarneiro.autohome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".AutoHomeApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".widget.AutoHomeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="br.com.ceducarneiro.autohome.LAMP_CLICK_ACTION" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/wheather_widget_info" />
+        </receiver>
+
+        <service android:name=".service.ParticleWeatherService"/>
+        <service android:name=".service.ParticleLampService"/>
+
+        <receiver android:name=".service.ParticleWeatherAlarm"/>
+
+        <receiver android:name=".receiver.PushBroadcast"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.BackgroundBroadcast.RECEIVE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

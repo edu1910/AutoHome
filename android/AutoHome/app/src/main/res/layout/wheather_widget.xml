@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_shape"
+    android:padding="@dimen/widget_margin"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/appwidget_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:drawableTop="@drawable/ic_ac_unit_white"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="99,9ºC" />
+
+    <TextView
+        android:id="@+id/appwidget_humi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:drawableTop="@drawable/ic_opacity_white"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="99,9%" />
+
+    <LinearLayout
+        android:id="@+id/layout_extra"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/appwidget_lamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:drawableTop="@drawable/ic_lightbulb_white"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/button_selector"
+            android:text="ON" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "br.com.ceducarneiro.autohome"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+
+        resValue "string", "PARTICLE_USER", "<YOUR_PARTICLE_USER_HERE>"
+        resValue "string", "PARTICLE_PASS", "<YOUR_PARTICLE_PASS_HERE>"
+        resValue "string", "PARTICLE_DEVICE", "<YOUR_PARTICLE_DEVICE_ID_HERE>"
+
+        manifestPlaceholders = [manifestApplicationId: "${applicationId}",
+                                onesignal_app_id: "<YOUR_ONESIGNAL_APP_ID_HERE>",
+                                onesignal_google_project_number: "<YOUR_GOOGLE_PROJECT_NUMBER_HERE>"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile "com.google.android.gms:play-services-gcm:8.3.0"
+    compile 'com.onesignal:OneSignal:2.+@aar'
+    compile 'io.particle:cloudsdk:0.3.4'
+}

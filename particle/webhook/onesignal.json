@@ -1,0 +1,16 @@
+{
+    "eventName": "lamp_status",
+    "url": "https://onesignal.com/api/v1/notifications",
+    "method": "POST",
+    "json" : {
+        "app_id": "<YOUR_ONESIGNAL_APP_ID_HERE>",
+        "included_segments": ["All"],
+        "data": {"lamp": "{{lamp_status}}", "time": "{{time}}"},
+        "android_background_data": true
+    },
+    "headers": {
+        "Authorization": "Basic <YOUR_REST_API_KEY_HERE>",
+        "Content-Type": "application/json"
+    }
+}
+

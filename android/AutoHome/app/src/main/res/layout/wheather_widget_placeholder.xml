@@ -1,0 +1,20 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_shape"
+    android:padding="@dimen/widget_margin">
+    <TextView
+        android:id="@+id/appwidget_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:drawableTop="@drawable/ic_cloud_white"
+        android:layout_margin="8dp"
+        android:text="Carregando as informações do dispositivo. Por favor, aguarde." />
+</RelativeLayout>
