@@ -34,7 +34,7 @@ PCB Design: [123D Circuits](https://123d.circuits.io/circuits/1929047-autohome)
 
 #### Installation
 
-
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/installation.png"/>
 
 ## Android
 
