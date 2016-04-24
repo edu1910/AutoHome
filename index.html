@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>AutoHome by edu1910</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>AutoHome</h1>
+        <h2>An open source and open hardware home automation project</h2>
+        <a href="https://github.com/edu1910/AutoHome" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="autohome" class="anchor" href="#autohome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AutoHome</h1>
+
+<p>An open source and open hardware home automation project</p>
+
+<p>This project uses a <a href="https://www.particle.io/prototype#photon">Particle Photon</a> and an Android app to monitor temperature and humidity and turn on/off a lamp in a room.</p>
+
+<p><img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/widget.png"></p>
+
+<h2>
+<a id="hardware" class="anchor" href="#hardware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardware</h2>
+
+<h4>
+<a id="parts-list" class="anchor" href="#parts-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parts list</h4>
+
+<ul>
+<li>1x <a href="https://store.particle.io/collections/photon">Photon w/ headers</a>
+</li>
+<li>1x <a href="https://www.sparkfun.com/products/10167">Humidity and temperature sensor RHT03</a>
+</li>
+<li>1x <a href="https://www.robocore.net/modules.php?name=GR_LojaVirtual&amp;prod=258">Relay module</a>
+</li>
+<li>1x Pin header 1x8</li>
+<li>1x Resistor 1k</li>
+<li>1x Resistor 10k</li>
+<li>8x F/F jumper wire</li>
+<li>1x 5V 1A power supply</li>
+<li>1x micro B USB cable</li>
+</ul>
+
+<h4>
+<a id="prototype" class="anchor" href="#prototype" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prototype</h4>
+
+<p><img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/prototype.png"></p>
+
+<h4>
+<a id="pcb" class="anchor" href="#pcb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PCB</h4>
+
+<p>PCB Design: <a href="https://123d.circuits.io/circuits/1929047-autohome">123D Circuits</a></p>
+
+<p><img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/pcb0.png">
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/pcb1.png">
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/pcb2.png">
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/pcb3.png"></p>
+
+<h4>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h4>
+
+<p><img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/installation.png"></p>
+
+<h2>
+<a id="android" class="anchor" href="#android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android</h2>
+
+<p>Android Studio <a href="AutoHome/tree/master/android/AutoHome">project</a></p>
+
+<p>You will need to modify the <a href="AutoHome/android/AutoHome/app/build.gradle">app build.gradle</a> file to add information about your <a href="https://www.particle.io/">Particle</a> and <a href="https://onesignal.com/">OneSignal</a> credentials.</p>
+
+<p><img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/widget_video.gif"></p>
+
+<h2>
+<a id="photon" class="anchor" href="#photon" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Photon</h2>
+
+<p>Photon <a href="AutoHome/tree/master/particle/photon/firmware">firmware</a></p>
+
+<p>Photon uses a webhook to call the API <a href="https://onesignal.com/">OneSignal</a> and send a push notification to mobile phones informing about changes in the lamp status. Change the <a href="AutoHome/particle/webhook/onesignal.json">webhook file</a> before add it in <a href="https://docs.particle.io/guide/tools-and-features/webhooks/">Particle</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/photon_code.png"></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/edu1910/AutoHome/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/edu1910/AutoHome/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/edu1910/AutoHome"></a> is maintained by <a href="https://github.com/edu1910">edu1910</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
