@@ -29,6 +29,6 @@ PCB Design: [123D Circuits](https://123d.circuits.io/circuits/1929047-autohome)
 
 ## Android
 
-<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/widget.gif" height="414" width="233"/>
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/widget.gif"/>
 
 ## Photon
