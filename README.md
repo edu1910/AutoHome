@@ -7,7 +7,7 @@ This project uses a [Particle Photon](https://www.particle.io/prototype#photon) 
 
 ## Hardware
 
-#### Parts lits
+#### Parts list
 
 * 1x [Photon w/ headers](https://store.particle.io/collections/photon)
 * 1x [Humidity and temperature sensor RHT03](https://www.sparkfun.com/products/10167)
