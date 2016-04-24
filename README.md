@@ -38,16 +38,16 @@ PCB Design: [123D Circuits](https://123d.circuits.io/circuits/1929047-autohome)
 
 ## Android
 
-Android Studio project: [https://github.com/edu1910/AutoHome/tree/master/android/AutoHome](https://github.com/edu1910/AutoHome/tree/master/android/AutoHome)
+Android Studio [project](AutoHome/tree/master/android/AutoHome)
 
-You will need to modify the app build.gradle file to add information about your credentials in Particle.
+You will need to modify the [app build.gradle](AutoHome/android/AutoHome/app/build.gradle) file to add information about your [Particle](https://www.particle.io/) and [OneSignal](https://onesignal.com/) credentials.
 
 <img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/widget_video.gif"/>
 
 ## Photon
 
-Photon firmware: [https://github.com/edu1910/AutoHome/tree/master/particle/photon/firmware](https://github.com/edu1910/AutoHome/tree/master/particle/photon/firmware)
+Photon [firmware](AutoHome/tree/master/particle/photon/firmware)
 
-Photon uses a webhook to call the API [OneSignal](https://onesignal.com/) and send a push notification to mobile phones informing about changes in the lamp status. Change the [webhook file](https://github.com/edu1910/AutoHome/particle/webhook/onesignal.json) before add it in Particle.
+Photon uses a webhook to call the API [OneSignal](https://onesignal.com/) and send a push notification to mobile phones informing about changes in the lamp status. Change the [webhook file](AutoHome/particle/webhook/onesignal.json) before add it in [Particle](https://docs.particle.io/guide/tools-and-features/webhooks/).
 
 <img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/photon_code.png"/>
