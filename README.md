@@ -1,9 +1,9 @@
 # AutoHome
 An open source and open hardware home automation project
 
-This project uses a [Particle Photon](https://www.particle.io/prototype#photon) and an Android Application to monitor temperature and humidity and turn on/off a lamp in a room.
+This project uses a [Particle Photon](https://www.particle.io/prototype#photon) and an Android app to monitor temperature and humidity and turn on/off a lamp in a room.
 
-<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/widget2.png"/>
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/widget.png"/>
 
 ## Hardware
 
@@ -21,14 +21,24 @@ This project uses a [Particle Photon](https://www.particle.io/prototype#photon) 
 
 #### Prototype
 
-
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/prototype.png"/>
 
 #### PCB
 
 PCB Design: [123D Circuits](https://123d.circuits.io/circuits/1929047-autohome)
 
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/pcb1.png"/>
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/pcb2.png"/>
+
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/pcb3.png"/>
+
+#### Installation
+
+
+
 ## Android
 
-<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/widget.gif"/>
+<img src="https://raw.githubusercontent.com/edu1910/AutoHome/master/resources/images/widget_video.gif"/>
 
 ## Photon
+
